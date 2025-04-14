@@ -24,24 +24,23 @@ Frontend can be built with React + MUI (e.g., using Vite).
 ------------------------------
 1. Install dependencies(in Frontend folder):
    yarn install
-   # or
-   npm install
+
+2. run Frontend:
+   yarn dev
+
 
 2. Set up PostgreSQL:
-   - Create a database: `auth_task_app`
+   - Create a database: "auth_task_app"
    - Run the SQL setup script:
 
-     ```bash
+     //in bash:
      psql -U your_username -d auth_task_app
-     ```
 
-     Then inside the `psql` prompt:
+     //Then inside the psql prompt:
+     \i /full/path/to/Task_Manager.sql
 
-     ```sql
-     \i /full/path/to/setup.sql
-     ```
-5. Start the server:
+3. Start the server:
 node app.js
 
-6. Server will run on:
+4. Server will run on:
 http://localhost:5000/
